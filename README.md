@@ -16,12 +16,11 @@ This is my personal developer portfolio, showcasing my professional experience, 
 - CSS3 (Materialize CSS)
 - JavaScript
 - Typed.js
-- GitHub Pages
 
 ## 🌐 Deployment
 This portfolio is hosted using **Vercel** and accessible at:
 
-👉 https://raghunath1999.github.io/
+👉 [https://raghunath1999.github.io/](https://raghunath-portfolio.vercel.app/)
 
 ## 📁 Sections
 - About Me
