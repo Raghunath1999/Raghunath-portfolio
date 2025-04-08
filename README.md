@@ -19,7 +19,7 @@ This is my personal developer portfolio, showcasing my professional experience, 
 - GitHub Pages
 
 ## 🌐 Deployment
-This website is hosted using GitHub Pages and accessible at:
+This portfolio is hosted using **Vercel** and accessible at:
 
 👉 https://raghunath1999.github.io/
 
