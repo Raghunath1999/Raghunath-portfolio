@@ -1,0 +1,509 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+aside {
+  background: #e0f2f1;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  margin: 15px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+  flex-grow: 1;
+}
+section {
+  margin-bottom: 50px;
+}
+
+/* contact section - social icons */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-circle {
+  background-color: #455a64;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.icon-circle.github {
+  background-color: #26a69a;
+}
+
+.icon-circle.linkedin {
+  background-color: #0077b5;
+}
+
+.contact-item span a {
+  color: #00695c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item span a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* read me and contact me in intro section*/
+.contactme {
+  position: relative;
+  padding: 11px 35px;
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.contactme:hover{
+  color: #00796b;
+  background-color: white;
+}
+
+.readme {
+  position: relative;
+  padding: 11px 35px;
+  background: #fff;
+  color: #00796b;
+  border: 2px solid #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+
+
+#typed-text {
+  font-size: 2rem;
+  color: green;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 90, 90, 0.8); /* deep teal glow */
+  margin-top: 10px;
+  display: inline-block;
+}
+ 
+/* Style for Social icons in Intro for Linkedin and github*/
+/* Style for social icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+
+.icon-button i {
+  font-size: 24px;
+}
+
+.icon-button.linkedin i {
+  color: #0077B5; /* LinkedIn blue */
+}
+
+.icon-button.github i {
+  color: #000000; /* GitHub black */
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+ /* button for contact and read me more in intro section */
+ .btn-outline {
+  border: 2px solid #00796b;
+  padding: 10px 20px;
+  color: #00796b;
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background-color: #00796b;
+  color: white;
+}
+
+/* styling for about section*/
+.about-section {
+  padding: 40px 0 40px 0; /* Reduce top padding, keep bottom balanced */
+}
+
+.about-text {
+  max-width: 900px;
+  margin: 0 auto; /* center horizontally */
+  font-size: 19px; /* slightly larger */
+  line-height: 1.8;
+  color: #212121;
+}
+
+.about-text p {
+  margin-bottom: 16px; /* slight margin tightening */
+}
+
+
+.hero-section p {
+  font-size: 20px; /* increase from default, adjust as needed */
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.tagline {
+  font-size: 20px;
+  line-height: 1.6;
+  color: white;
+  margin-top: 10px;
+}
+
+/** Experience section styling */
+/* Experience Section */
+#experience {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.section-heading {
+  font-size: 32px; /* unify all */
+  font-weight: 700;
+  color: white;
+  background-color: #00796b;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+.experience-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card h5 {
+  font-size: 22px;
+  color: #004d40;
+  margin-bottom: 15px;
+}
+
+.experience-card .role {
+  color: #555;
+  font-weight: normal;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.experience-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.experience-card .duration {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.experience-card:first-of-type {
+  margin-top: 30px;
+}
+
+#experience {
+  padding: 80px 0 30px 0; /* Top | Right | Bottom | Left */
+}
+
+/*project section styling */
+/* Project Section Styling */
+.project-section {
+  padding: 60px 0; /* consistent top and bottom padding */
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.project-card h5 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #004d40;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+}
+
+
+
+/* Section heading style for consistency */
+.section-heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  background-color: #00796b;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+/* Project section spacing and font */
+#projects {
+  padding: 50px 0; /* top and bottom padding */
+}
+
+.project-card {
+  width: 250px;
+  margin: 15px;
+  font-size: 16px; /* Match Skills section */
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+/* styling skills section .... */
+.skills-section {
+  padding: 80px 0;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skills-column {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 300px;
+  flex: 1;
+}
+
+
+
+.skills-header {
+  background-color: #00796B !important; /* Teal green from your hero name */
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 15px;
+}
+
+
+.skills-column ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.skills-column li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*Education section styling */
+/* Education section styling */
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.edu-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  max-width: 400px;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-title {
+  font-size: 20px;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.edu-card p {
+  font-size: 15px;
+  margin: 6px 0;
+  color: #333;
+}
+
+.edu-card ul {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.edu-card li {
+  list-style-position: outside !important;
+  font-size: 15px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero-section {
+  margin-bottom: 0;
+  padding-bottom: 20px;  /* was 0, now gently reduced */
+}
+
+.about-section {
+  margin-top: 0;
+  padding-top: 20px;     /* was 0, now gently added */
+}
+
+/* typed_prefix*/
+.typed-prefix {
+  font-size: 2rem;
+  color: green;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 90, 90, 0.8); /* match glow effect */
+  margin-top: 10px;
+  display: inline-block;
+}
+
+html { 
+  scroll-behavior: smooth;  
+}
+
+.hero-section {
+  margin-bottom: 0;
+  padding-bottom: 0; /* Previously was 20px */
+}
+
+.about-section {  
+  margin-top: 0;
+  padding-top: 0; /* Gives breathing space, adjust as needed */
+}
+
+/* Spacing under Contact heading */
+#contact .section-heading {
+  margin-bottom: 30px;
+}
+
+/* Spacing under Resume heading */
+#resume .section-heading {
+  margin-bottom: 20px;
+}
+
+/* Optional: add top margin to resume button for spacing */
+#resume .btn {
+  margin-top: 10px;
+}

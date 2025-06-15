@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raghunath Reddy Portfolio</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css"/> 
+
+  <style>
+    html {
+      scroll-behavior: smooth; 
+    }
+    aside {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100vh;
+      background-color: #e0f2f1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    main {
+      margin-left: 270px;
+      padding: 40px;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    ul.table-of-contents li a.active {
+      color: #004d40 !important;
+      font-weight: bold;
+    }
+    .hero-section {
+      background-color: #5f9e94;
+      color: white;
+      padding: 60px 30px;
+    }
+    .hero-section .highlight {
+      background-color: #00796b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #fff;
+    }
+    .section h2 {
+      background-color: #00796b;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .btn-outline {
+      border: 2px solid #00796b;
+      padding: 10px 20px;
+      color: #00796b;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .section-with-header {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    
+    .section-heading {
+      background-color: #00796b;
+      color: white;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+<aside>
+  <img src="assets/img/profile.jpg" alt="Profile Photo" class="profile-pic"/>
+  <ul class="section table-of-contents">
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#experience"><i class="fas fa-chart-line"></i> Experience</a></li>
+    <li><a href="#projects"><i class="fas fa-file-alt"></i> Projects</a></li>
+    <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
+    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    <li><a href="#resume"><i class="fas fa-folder"></i> Resume</a></li>
+  </ul>
+</aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- HERO / ABOUT Section -->
+    <section id="intro" class="section scrollspy hero-section">
+      <div class="intro-content">
+        <h1>Hi, I'm <span class="highlight">Raghunath Reddy.</span></h1>
+        <h4>A <span id="typed-text"></span></h4>
+        <p class="tagline">
+          Self-driven and passionate Software Engineer with over 5 years of experience building scalable applications in finance and healthcare.
+          A quick starter with a curious mind, skilled in Java, Python, Angular, and AWS—dedicated to solving complex, real-world problems with clean and efficient code.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/raghunath12" target="_blank" class="icon-button linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Raghunath1999" target="_blank" class="icon-button github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <br />
+        <a class="btn teal" href="#about">Read More</a>
+        <a class="btn white-text teal lighten-1" href="#contact">Contact Me</a>
+      </div>
+    </section>
+    
+
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy about-section">
+      <h2 class="section-heading">ABOUT</h2>
+      <div class="container about-text">
+        <p>
+          I am a Computer Science graduate student at  University of Central Missouri with over 5 years of professional experience in full-stack development. 
+          I thrive on building robust, scalable applications and  passionate about solving real-world problems through clean, efficient code.
+          My expertise includes Java, Python, Angular, and Spring Boot, with hands-on experience in architecting microservices and implementing CI/CD pipelines for enterprise-grade systems. 
+          I’ve delivered reliable and high performing solutions across finance and healthcare sectors.I’m an AWS Certified Developer – Associate, with strong experience deploying and managing cloud-native applications using Docker and AWS. 
+          I’ve optimized infrastructure to support continuous delivery and high availability at scale.Beyond professional work, I’m an active problem solver with 400+ coding challenges completed on platforms like LeetCode.
+          I constantly explore innovative tools and technologies to build secure and user-centric applications.
+        </p> 
+    
+        <p><strong><b>Languages:</b></strong> Java, Python, C++, JavaScript, C, TypeScript, HTML/CSS</p>
+        <p><strong><b>Databases:</b></strong> MySQL,MariaDB, PostgreSQL, DynamoDB, MongoDB</p>
+        <p><strong><b>Frameworks:</b></strong> Springboot, Angular, React, Hibernate, Android </p>
+        <p><strong><b>Tools & Technologies:</b></strong> Intellj, Visual Studio Code, Git, Docker, AWS, JIRA</p>
+      </div>
+    </section>
+    
+    
+ <!-- EXPERIENCE -->
+<section id="experience" class="section scrollspy experience-section">
+  <h2 class="section-heading">EXPERIENCE</h2>
+
+  <!-- Athenahealth -->
+  <div class="experience-card z-depth-1">
+    <h5><strong>Athenahealth</strong> <span class="role grey-text text-darken-1">– Software Engineer</span></h5>
+    <ul class="browser-default">
+      <li>Engineered event-driven microservices using <strong>Spring Boot</strong>, <strong>Spring Cloud</strong>, and <strong>Kafka</strong>, ensuring 99.9% uptime for clinical workflows.</li>
+      <li>Developed 15+ HIPAA-compliant REST APIs with <strong>Java</strong>, <strong>Hibernate</strong>, and <strong>Spring Security</strong> for seamless EHR and insurance integrations.</li>
+      <li>Automated CI/CD using <strong>Jenkins</strong>, <strong>Docker</strong>, and <strong>AWS</strong> (EC2, Lambda, S3), reducing deployment cycles by 20%.</li>
+      <li>Implemented RBAC with <strong>OAuth2</strong>, <strong>JWT</strong>, and <strong>MFA</strong> to meet <strong>HIPAA/HITRUST</strong> compliance for secure data access.</li>
+    </ul>
+    <p class="duration grey-text text-darken-2">Jan 2025 – Present | Atlanta, GA</p>   
+  </div>
+
+  <!-- DBS -->
+  <div class="experience-card z-depth-1">
+    <h5><strong>Development Bank of Singapore (DBS)</strong> <span class="role grey-text text-darken-1">– Software Engineer</span></h5>
+    <ul class="browser-default">
+      <li>Built and deployed 30+ REST APIs using <strong>Spring Boot</strong> for KYC, onboarding, and document services, improving efficiency by 40%.</li>
+      <li>Migrated monolithic systems to microservices using <strong>Spring Cloud</strong> and <strong>Kafka</strong>, enhancing flexibility and processing speed by 30%.</li>
+      <li>Automated internal workflows using <strong>BPMN</strong> and <strong>Spring Integration</strong> across 4 departments.</li>
+      <li>Delivered CI/CD pipelines and migrated deployments to <strong>AWS</strong> (EC2, S3, CloudWatch), reducing downtime and release errors.</li>
+    </ul>
+    <p class="duration grey-text text-darken-2">Jul 2022 – Dec 2023 | Hyderabad, India</p>
+  </div>
+
+  <!-- IBM -->
+  <div class="experience-card z-depth-1">
+    <h5><strong>IBM</strong> <span class="role grey-text text-darken-1">– Associate Software Engineer</span></h5>
+    <ul class="browser-default">
+      <li>Developed scalable REST APIs using <strong>Spring Boot</strong> for telecom apps handling millions of transactions.</li>
+      <li>Built modern UIs with <strong>React</strong>, <strong>Angular</strong>, and <strong>Redux</strong>, improving load times and user experience across platforms.</li>
+      <li>Implemented CI/CD automation with <strong>Docker</strong> and <strong>Jenkins</strong>, accelerating delivery by 30%.</li>
+      <li>Achieved <strong>90%+</strong> test coverage using <strong>JUnit</strong> and <strong>Mockito</strong>, ensuring code quality and reducing production issues.</li>
+    </ul>
+    <p class="duration grey-text text-darken-2">May 2020 – June 2022 | Hyderabad, India</p>
+  </div> 
+</section>
+
+<!-- Project Section -->
+<section id="projects" class="section scrollspy project-section">
+  <h2 class="section-heading">PROJECTS</h2>
+
+  <div class="projects-container">
+
+    <a href="https://github.com/Raghunath1999/Banking-Application" target="_blank" class="project-card">
+      <img src="assets/img/project1.jpg" alt="Banking Application">
+      <h5>Banking Application</h5>
+      <p>A secure online banking system with transaction and user management features.</p>
+    </a>
+
+    <a href="https://github.com/Raghunath1999/Face-Recognition-using-AWS" target="_blank" class="project-card">
+      <img src="assets/img/project2.jpg" alt="Face Recognition using AWS">
+      <h5>Face Recognition using AWS</h5>
+      <p>Face recognition system using AWS Rekognition API with real-time image analysis.</p>
+    </a>
+
+    <a href="https://github.com/Raghunath1999/Real-Time-Chat-Application" target="_blank" class="project-card">
+      <img src="assets/img/project3.jpg" alt="Chat App">
+      <h5>Real-time Chat Application</h5>
+      <p>A responsive web chat app with WebSockets for real-time communication.</p>
+    </a>
+
+    <a href="https://github.com/Raghunath1999/Payroll-management-System" target="_blank" class="project-card">
+      <img src="assets/img/project4.jpg" alt="Payment System">
+      <h5>Payment Management System</h5>
+      <p>Automated payroll system for employee salary and tax management.</p>
+    </a>
+
+    <a href="https://github.com/Raghunath1999/Diabetics-prediction-using-Machine-Learning" target="_blank" class="project-card">
+      <img src="assets/img/project5.jpg" alt="Diabetics Prediction">
+      <h5>Diabetics Prediction using ML</h5>
+      <p>ML-powered tool for predicting diabetes risk based on health parameters.</p>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+<section id="skills" class="section scrollspy skills-section">
+  <h2 class="section-heading">SKILLS</h2>
+
+  <div class="skills-grid">
+
+    <div class="skills-column">
+      <div class="skills-header green">Software Development</div>
+      <ul class="browser-default">
+        <li>Data Structures and Algorithms</li>
+        <li>Object Oriented Programming</li>
+        <li>High-Level Design (HLD)</li>
+        <li>API Integration</li>
+        <li>Agile Methodologies</li>
+        <li>Microservices Architecture</li>
+        <li>Design Patterns</li>
+        <li>Clean Architecture</li>
+        <li>Test-Driven Development</li>
+        <li>SAFE Agile Framework</li>
+        <li>CI/CD Pipelines</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <div class="skills-header green">Languages/Frameworks</div>
+      <ul class="browser-default">
+        <li>Java (Core Java, Java EE)</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML, CSS</li>
+        <li>C++</li>
+        <li>Spring Boot</li>
+        <li>Spring MVC</li>
+        <li>Spring Security</li>
+        <li>Spring Data JPA</li>
+        <li>Spring Cloud</li>
+        <li>AngularJs</li>
+        <li>ReactJS</li>
+        <li>Hibernate</li>
+        <li>JUnit</li>
+        <li>Maven</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <div class="skills-header green">Technologies & Infrastructure</div>
+      <ul class="browser-default">
+        <li>AWS, Azure </li>
+        <li>Docker, Kubernetes</li>
+        <li>Log Explorer, Log Rocket</li>
+        <li>Jenkins</li>
+        <li>CI/CD</li>
+        <li>Prometheus, Grafana</li>
+        <li>REST API</li>
+        <li>MySQL, PostgreSQL</li>
+        <li>MongoDB, Elasticsearch</li>
+        <li>Firebase</li>
+        <li>RabitMQ, Kafka</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+   <!-- EDUCATION -->
+<!-- EDUCATION -->
+<section id="education" class="section scrollspy">
+  <h2 class="section-heading">EDUCATION</h2>
+
+  <div class="education-container">
+
+    <!-- Master's -->
+    <div class="edu-card">
+      <h5 class="edu-title">University of Central Missouri</h5>
+      <p><strong><b>Degree:</b></strong> Master of Science in Computer Science</p>
+      <p><strong><b>Relevant Coursework:</b></strong></p>
+      <ul class="browser-default">
+        <li>Algorithms</li>
+        <li>Machine Learning</li>
+        <li>Artificial Intelligence</li>
+        <li>Software Engineering</li>
+        <li>Operating Systems</li>
+        <li>Cloud Computing</li>
+        <li>Database Management Systems</li>
+      </ul>
+    </div>
+
+    <!-- Bachelor's -->
+    <div class="edu-card">
+      <h5 class="edu-title">Jawaharlal Nehru Technological University Hyderabad</h5>
+      <p><strong><b>Degree:</b></strong> Bachelor of Technology in Computer Science and Engineering</p>
+      <p><strong><b>Relevant Coursework:</b></strong></p>
+      <ul class="browser-default">
+        <li>Data Structures and Algorithms</li>
+        <li>Web Technologies</li> 
+        <li>Compiler Design</li> 
+        <li>Database Management Systems</li>
+        <li>Computer Networks</li>
+        <li>Operating Systems</li>
+      </ul>
+    </div>
+
+    <!-- Certifications --> 
+    <div class="edu-card">
+      <h5 class="edu-title text-center">Certifications</h5>
+      <ul class="browser-default">
+        <li>AWS Certified Developer – Associate – AWS</li>
+        <li>Career Essentials in Generative AI – Microsoft</li>
+        <li>App Sec Silver Titan – DBS Bank</li>
+        <li>Problem Solving – HackerRank</li>
+        <li>Programming Fundamentals – Duke University</li>
+        <li>SQL – UC Davis</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!--Contact Section -->
+<section id="contact" class="section scrollspy">
+  <h2 class="section-heading">CONTACT</h2>
+  <div class="contact-item">
+    <div class="icon-circle"><i class="fas fa-phone"></i></div>
+    <span>+1 913-456-0870</span>
+  </div>
+  <div class="contact-item">
+    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+    <span>raghunathreddych29@gmail.com</span>
+  </div>
+  <div class="contact-item"> 
+    <div class="icon-circle github"><i class="fab fa-github"></i></div>
+    <span><a href="https://github.com/Raghunath1999" target="_blank">github.com/Raghunath1999</a></span>
+  </div>
+  <div class="contact-item">
+    <div class="icon-circle linkedin"><i class="fab fa-linkedin-in"></i></div>
+    <span><a href="https://linkedin.com/in/raghunath12" target="_blank">linkedin.com/in/raghunath12</a></span>
+  </div>
+
+
+    <!-- RESUME -->
+<section id="resume" class="section scrollspy">
+  <h2 class="section-heading">RESUME</h2>
+  <a href="Raghunath_Resume.pdf" download class="btn teal">Download Resume</a>
+</section>
+
+
+  </main>
+
+  <!-- JS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const scrollElems = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollElems, {
+        scrollOffset: 50
+      });
+
+      var options = {
+        strings: [" Software Engineer", " Fast Learner", "  Problem Solver"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true
+      };
+      new Typed('#typed-text', options);
+    });
+  </script>
+</body>
+</html> 
